@@ -1,4 +1,4 @@
-import React, { useRef, useState, useEffect } from "react";
+import { useRef, useState, useEffect } from "react";
 import { whyChooseUs } from "../../lib/data";
 
 const icons: Record<string, JSX.Element> = {
