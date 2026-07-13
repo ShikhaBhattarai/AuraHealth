@@ -1,19 +1,25 @@
+import auraClinicImage from "../../assets/images/aura-clinic-baneswor.png";
+
 export default function Intro() {
   return (
     <section id="about">
       <div className="wrap intro-grid">
-        <div>
-          <div className="eyebrow">Your Local Clinic in New Baneshwor</div>
-          <h2>Quality healthcare should feel like home</h2>
-          <p style={{ marginTop: 18 }}>
-            At Aura Health Clinic Pvt. Ltd., we believe that quality healthcare begins with compassion, trust, and personalized attention. Conveniently located in New Baneshwor, Kathmandu, our clinic provides comprehensive dental and pediatric services in a modern, welcoming, and family-friendly environment.
+        <div className="stat-card">
+          <h2>Our Local Clinic in New Baneshwor</h2>
+          <div className="eyebrow">Quality healthcare should feel like home</div>
+          <p>
+            At Aura Health Clinic Pvt. Ltd., we provide caring and reliable dental and pediatric services for individuals and families. Located in New Baneshwor, Kathmandu, our clinic offers a clean, comfortable, and friendly environment where patients of all ages feel welcome.
+          </p>
+          <p>
+            Our goal is to help you and your family stay healthy. Whether you need a regular check-up, dental treatment, or care for your child, our experienced team is here to provide safe, quality healthcare with compassion and respect.
           </p>
         </div>
-        <div className="stat-card">
-          <div className="l">Our goal is simple: to keep your family healthy, confident, and smiling.</div>
-          <p>
-            Whether you are bringing your child for a routine health check-up or seeking expert dental care for yourself or your family, our experienced team is committed to delivering evidence-based, ethical, and patient-centered care.
-          </p>
+        <div className="intro-visual">
+          <img
+            src={auraClinicImage}
+            alt="Aura Health Clinic in New Baneshwor"
+            className="intro-image"
+          />
         </div>
       </div>
     </section>

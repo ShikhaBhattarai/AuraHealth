@@ -212,7 +212,12 @@ export const siteConfig = {
   addressHref: "https://share.google/RlmW6bGCXGmaavojw",
   areaShort: "New Baneshwor, Kathmandu",
   hours: [
-    { days: "Sun – Fri", time: "9:00 – 18:00" },
+    { days: "Sunday", time: "7:00AM – 07:00PM" },
+    { days: "Monday", time: "7:00AM – 07:00PM" },
+    { days: "Tuesday", time: "7:00AM – 07:00PM" },
+    { days: "Wednesday", time: "7:00AM – 07:00PM" },
+    { days: "Thursday", time: "7:00AM – 07:00PM" },
+    { days: "Friday", time: "7:00AM – 07:00PM" },
     { days: "Saturday", time: "Closed" },
   ],
 };

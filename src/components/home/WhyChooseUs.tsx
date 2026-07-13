@@ -1,3 +1,4 @@
+import React, { useRef, useState, useEffect } from "react";
 import { whyChooseUs } from "../../lib/data";
 
 const icons: Record<string, JSX.Element> = {
@@ -29,8 +30,30 @@ const icons: Record<string, JSX.Element> = {
 };
 
 export default function WhyChooseUs() {
+  const scrollerRef = useRef<HTMLDivElement | null>(null);
+  const [canScroll, setCanScroll] = useState(false);
+
+  useEffect(() => {
+    const el = scrollerRef.current;
+    if (!el) return;
+    const check = () => setCanScroll(el.scrollWidth > el.clientWidth + 5);
+    check();
+    window.addEventListener("resize", check);
+    return () => window.removeEventListener("resize", check);
+  }, []);
+
+  const scrollByCard = (dir: number) => {
+    const el = scrollerRef.current;
+    if (!el) return;
+    // width of one card (approx) including gap
+    const card = el.querySelector<HTMLElement>(".feat-card");
+    const gap = 20; // matches CSS gap
+    const step = (card?.clientWidth || (el.clientWidth / 3)) + gap;
+    el.scrollBy({ left: dir * step, behavior: "smooth" });
+  };
+
   return (
-    <section>
+    <section className="why-choose">
       <div className="wrap">
         <div className="section-head center">
           <div className="eyebrow">Why Families Choose Us</div>
@@ -41,18 +64,44 @@ export default function WhyChooseUs() {
           </p>
         </div>
       </div>
-      <div className="wrap feat-grid">
-        {whyChooseUs.map((feature) => (
-          <div className="feat-card" key={feature.title}>
-            <div className="feat-icon">
-              <svg viewBox="0 0 24 24" fill="none" strokeWidth={2}>
-                {icons[feature.title]}
+
+      <div className="feat-carousel wrap">
+        {canScroll && (
+          <div className="feat-nav">
+            <button
+              aria-label="Previous features"
+              className="feat-prev"
+              onClick={() => scrollByCard(-1)}
+            >
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" strokeWidth={2}>
+                <path d="M15 18l-6-6 6-6" />
               </svg>
-            </div>
-            <h3>{feature.title}</h3>
-            <p>{feature.description}</p>
+            </button>
+            <button
+              aria-label="Next features"
+              className="feat-next"
+              onClick={() => scrollByCard(1)}
+            >
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" strokeWidth={2}>
+                <path d="M9 6l6 6-6 6" />
+              </svg>
+            </button>
           </div>
-        ))}
+        )}
+
+        <div className="feat-grid" ref={scrollerRef}>
+          {whyChooseUs.map((feature) => (
+            <div className="feat-card" key={feature.title}>
+              <div className="feat-icon">
+                <svg viewBox="0 0 24 24" fill="none" strokeWidth={2}>
+                  {icons[feature.title]}
+                </svg>
+              </div>
+              <h3>{feature.title}</h3>
+              <p>{feature.description}</p>
+            </div>
+          ))}
+        </div>
       </div>
     </section>
   );
