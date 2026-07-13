@@ -6,7 +6,7 @@ export default function Footer() {
       <div className="wrap foot-grid">
         <div>
           <div className="foot-logo">Aura Health Clinic</div>
-          <p style={{ color: "#9DB3A8", fontSize: "13.5px" }}>
+          <p style={{ color: "#A4B9C9", fontSize: "13.5px" }}>
             Pvt. Ltd. —{" "}
             <a href={siteConfig.addressHref} target="_blank" rel="noopener noreferrer">
               {siteConfig.address}

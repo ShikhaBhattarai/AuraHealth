@@ -11,11 +11,11 @@ export default function AppointmentSection() {
       <div className="wrap">
         <div className="appt-wrap">
           <div className="appt-info">
-            <div className="eyebrow" style={{ color: "#8FD8BC" }}>
+            <div className="eyebrow" style={{ color: "#BFD9FF" }}>
               Book An Appointment
             </div>
             <h3>With Aura Health Clinic</h3>
-            <p style={{ color: "#D9EDE4" }}>
+            <p style={{ color: "#DDECFD" }}>
               Booking should be simple. Call, WhatsApp, or send your preferred time below and our front desk will
               confirm within the day.
             </p>
