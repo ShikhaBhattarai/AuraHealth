@@ -10,9 +10,11 @@ export default function UtilityBar() {
           <a href={siteConfig.addressHref} target="_blank" rel="noopener noreferrer">
             📍 {siteConfig.address}
           </a>
-          <a href={siteConfig.phoneHref}>📞 {siteConfig.phone}</a>
+          <a className="phone-link" href={siteConfig.phoneHref}>
+            📞 {siteConfig.phone}
+          </a>
         </div>
-        <div className="left">
+        <div className="left social">
           <a href="https://facebook.com/Aurahealthclinic" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
             <FontAwesomeIcon icon={faFacebookF} aria-hidden="true" />
           </a>
