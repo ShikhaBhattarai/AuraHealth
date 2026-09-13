@@ -21,7 +21,7 @@ export default function Doctors() {
               <h3>{doctor.name}</h3>
               <div className="role">{doctor.role}</div>
               <p>{doctor.bio}</p>
-              <a href="#">Learn more →</a>
+              {/* <a href="#">Learn more →</a> */}
             </div>
           </div>
         ))}

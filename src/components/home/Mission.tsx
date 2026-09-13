@@ -4,7 +4,7 @@ export default function Mission() {
       <div className="eyebrow">Our Mission</div>
       <blockquote>
         "To provide accessible, evidence-based, compassionate healthcare that promotes lifelong wellness for
-        children and families — while upholding the highest standards of professionalism and integrity."
+        children and families, while upholding the highest standards of professionalism and integrity."
       </blockquote>
     </section>
   );

@@ -1,5 +1,5 @@
-import drSusanBhattarai from "../assets/doctors/dr-susan-bhattarai.jpeg";
-import drBinitaPathak from "../assets/doctors/dr-binita-pathak-cropped.jpeg";
+import drSusanBhattarai from "../assets/doctors/Dr-susan-bhattarai.png";
+import drBinitaPathak from "../assets/doctors/Dr-binita-pathak-cropped.png";
 
 export type Doctor = {
   slug: string;
@@ -139,7 +139,7 @@ export const faqs: FAQ[] = [
   {
     question: "How do I book an appointment?",
     answer:
-      "Call or WhatsApp us directly, or use the request form above — our front desk confirms same-day and will call to finalise your time slot.",
+      "Call or WhatsApp us directly at +977 1-4533417, or use the request form above. Our front desk will call to finalise your time slot.",
   },
   {
     question: "Is the pharmacy open to walk-ins without a consultation?",
@@ -153,7 +153,7 @@ export const faqs: FAQ[] = [
 ];
 
 export const pediatricNavLinks = [
-  "Well Child Checkups",
+  "Child Checkups",
   "Vaccination & Immunization",
   "Newborn Care",
   "Asthma & Allergy Care",

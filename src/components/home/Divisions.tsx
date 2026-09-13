@@ -45,7 +45,7 @@ export default function Divisions() {
               ))}
             </div>
             <a className="explore" href="#">
-              Explore {division.name} →
+              {/* Explore {division.name} → */}
             </a>
           </div>
         ))}
