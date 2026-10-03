@@ -46,6 +46,8 @@ h1,h2,h3{ font-family:var(--serif); color:var(--ink); text-wrap:balance; margin:
 ::selection{ background:var(--mid-soft); }
 @media (prefers-reduced-motion: reduce){ *{ animation:none !important; transition:none !important; scroll-behavior:auto !important; } }
 
+section#appointment { display:none; }
+
 .wrap{ max-width:1180px; margin:0 auto; padding:0 32px; }
 @media (max-width:640px){ .wrap{ padding:0 20px; } }
 
