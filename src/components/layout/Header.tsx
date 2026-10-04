@@ -1,4 +1,4 @@
-import { siteConfig, pediatricNavLinks, dentalNavLinks } from "../../lib/data";
+import { pediatricNavLinks, dentalNavLinks } from "../../lib/data";
 import Button from "../ui/Button";
 import Logo from "../ui/Logo";
 
