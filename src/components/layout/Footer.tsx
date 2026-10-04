@@ -3,7 +3,7 @@ import { siteConfig } from "../../lib/data";
 export default function Footer() {
   return (
     <footer className="site">
-      <div className="wrap foot-grid">
+      <div className="wrap foot-grid footer-mobile">
         <div>
           <div className="foot-logo">Aura Health Clinic Pvt. Ltd.</div>
           <p style={{ color: "#9DB3A8", fontSize: "13.5px" }}>
