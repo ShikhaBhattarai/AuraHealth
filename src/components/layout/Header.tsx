@@ -1,5 +1,4 @@
 import { pediatricNavLinks, dentalNavLinks } from "../../lib/data";
-import Button from "../ui/Button";
 import Logo from "../ui/Logo";
 
 export default function Header() {
