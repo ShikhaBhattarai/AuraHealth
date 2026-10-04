@@ -9,7 +9,6 @@ export default function OffersStrip() {
             <div className="tag">{offer.tag}</div>
             <h3>{offer.title}</h3>
             <p>{offer.description}</p>
-            <a href={offer.href}>{offer.linkLabel}</a>
           </div>
         ))}
       </div>

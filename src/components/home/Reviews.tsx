@@ -8,7 +8,6 @@ export default function Reviews() {
           <div className="eyebrow">Hear From Our Families</div>
           <h2>Families across Kathmandu trust Aura</h2>
         </div>
-        <div className="sample-note">Sample layout — to populate with real Google Reviews at launch</div>
         <div className="rating-row">
           <span className="stars">★★★★★</span>
           <span className="rating-num">{googleRating.score}</span>

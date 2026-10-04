@@ -43,8 +43,18 @@ export default function Header() {
           </a>
         </nav>
         <div className="head-actions">
-          <a className="phone-link" href={siteConfig.phoneHref}>
-            {siteConfig.phone}
+          <a className="phone-link" href="tel:+97714533417">
+            Book Appointment <br />
+            +977 1-4533417
+          </a>
+          <a
+            className="whatsapp-link"
+            href="https://wa.me/9779841476401?text=Hello%20Aura%20Health%20Clinic%2C%20I%20would%20like%20to%20book%20an%20appointment."
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Chat on WhatsApp"
+          >
+            +9779841476401
           </a>
           <Button href="#appointment">Book Appointment</Button>
         </div>

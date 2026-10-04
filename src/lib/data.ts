@@ -45,7 +45,13 @@ export const divisions: Division[] = [
     who: "Dr. Susan Bhattarai, MD",
     description:
       "Newborn to adolescent care — well-child checkups, growth monitoring, vaccination, and treatment for fever, asthma, allergies and infections.",
-    services: ["Well-Child Checkups", "Vaccination", "Newborn Care", "Nutrition"],
+    services: [
+      "Child Checkups",
+      "Vaccination & Immunization",
+      "Newborn Care",
+      "Asthma & Allergy Care",
+      "Pediatric ECG — Coming Soon",
+    ],
     icon: "pediatric",
   },
   {
@@ -54,7 +60,13 @@ export const divisions: Division[] = [
     who: "Dr. Binita Pathak, MDS",
     description:
       "Comprehensive dental care from routine cleaning to crowns, bridges and full smile restoration, using modern techniques and materials.",
-    services: ["Cleaning", "Root Canal", "Crowns & Bridges", "Dentures"],
+    services: [
+      "Teeth Cleaning",
+      "Root Canal Treatment",
+      "Crowns & Bridges",
+      "Dentures",
+      "Smile Makeover",
+    ],
     icon: "dental",
   },
   {
@@ -81,15 +93,15 @@ export const offers: Offer[] = [
     tag: "New Patient",
     title: "First Pediatric Visit",
     description: "Comprehensive well-child check-up & growth assessment for first-time families.",
-    linkLabel: "Book this visit →",
-    href: "#appointment",
+    linkLabel: "Book Appointment",
+    href: "tel:+97714533417",
   },
   {
     tag: "Family Dental",
     title: "Checkup & Cleaning",
     description: "Exam, scaling and personalised treatment planning with Dr. Binita Pathak.",
-    linkLabel: "Book this visit →",
-    href: "#appointment",
+    linkLabel: "Book Appointment",
+    href: "tel:+97714533417",
   },
   {
     tag: "Convenience",

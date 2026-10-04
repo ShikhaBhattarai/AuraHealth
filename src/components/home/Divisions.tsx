@@ -39,6 +39,7 @@ export default function Divisions() {
             <h3>{division.name}</h3>
             <div className="who">{division.who}</div>
             <p>{division.description}</p>
+            {(division.slug === "pediatric-care" || division.slug === "dental-care") && <h4>Service Provided</h4>}
             <div className="sublist">
               {division.services.map((service) => (
                 <span key={service}>{service}</span>
