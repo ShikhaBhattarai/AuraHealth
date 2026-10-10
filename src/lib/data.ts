@@ -219,7 +219,7 @@ export const siteConfig = {
   tagline: "Caring for Every Smile. Caring for Every Child.",
   phone: "+977 1-4533417",
   phoneHref: "tel:+97714533417",
-  whatsappHref: "https://wa.me/+977 14533417",
+  whatsappHref: "https://wa.me/9779841476401?text=Hello%20Aura%20Health%20Clinic%2C%20I%20would%20like%20to%20book%20an%20appointment.",
   address: "Ward 10, House Number 525, Devkota Sadak, Kathmandu 44600, Nepal (Near Eyeplex Mall)",
   addressHref: "https://share.google/RlmW6bGCXGmaavojw",
   areaShort: "New Baneshwor, Kathmandu",

@@ -14,6 +14,17 @@ export default function Reviews() {
           <span className="rating-src">{googleRating.source}</span>
         </div>
       </div>
+      <div className="wrap rev-embed-wrap">
+        <div className="map-review-card">
+          <iframe
+            title="Aura Health Clinic Google Maps reviews"
+            src="https://www.google.com/maps?q=Aura%20Health%20Clinic%20Baneshwor%20Kathmandu&output=embed"
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+            allowFullScreen
+          />
+        </div>
+      </div>
       <div className="wrap rev-grid">
         {sampleReviews.map((review) => (
           <div className="rev-card" key={review.who}>
